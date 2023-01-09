@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    margin: 0rem 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 350px;
+}
+
+.image {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card .image .view {
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.shade {
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+}
+
+.card .image .img{
+    width: 100%;
+    height: 100%;
+}
+
+.card h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card .desc {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.bot-para {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-para .price {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.bot-para .price img{
+    width: auto;
+    height: auto;
+    margin-right: 0.4rem;
+}
+
+.bot-para .duration {
+    display: flex;
+    align-items: center;
+}
+
+.bot-para .duration img{
+    width: auto;
+    height: auto;
+    margin-right: 0.3rem;
+}
+
+.bot-para .price p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.bot-para .duration{
+    display: flex;
+}
+
+.duration p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+hr {
+    color :hsl(215, 32%, 27%);
+    margin: 1rem 0;
+}
+
+.bot-bar {
+    display: flex;
+    align-items: center;
+}
+
+.bot-bar img {
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.bot-bar p {
+    color: hsl(215, 51%, 70%);
+}
+
+.bot-bar span {
+    color: hsl(0, 0%, 100%);
+}
+
+.card h1:is(:hover, :focus), .bot-bar span:is(:hover, :focus) {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card .image .img:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.shade:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
